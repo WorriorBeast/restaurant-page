@@ -1,0 +1,149 @@
+:root {
+   font-size: 16px;
+   font-family: Verdana, Arial, sans-serif, Georgia, Garamond, serif;
+   --tab-color: aliceblue;
+   --content-background-color: #d9f6ff;
+   --minimum-width: 401px;
+   --content-container-width:max(60vw, var(--minimum-width));
+}
+
+html, body {
+   height: 100%;
+}
+
+body {
+   margin: 0;
+   background-image: url(./dark-chocolate-tile-pieces-covered-chocolate-powder.jpeg);
+   background-attachment: fixed;
+   background-size: contain;
+}
+
+header {
+   height: 100px;
+   display: grid;
+   justify-content: center;
+   min-width: var(--minimum-width);
+}
+
+nav {
+   display: grid;
+   grid-template-columns: repeat(3, minmax(88px, 1fr));
+   align-items: end;
+}
+
+button {
+   background-color: var(--tab-color);
+   height: 50px;
+   border-bottom: none;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+   font-size: 1rem;
+   padding: 0;
+   cursor: pointer;
+   border: none;
+   position: relative;
+}
+
+button::before {
+   content: "";
+   position: absolute;
+   bottom: 0;
+   left: -19px;
+   height: 20px;
+   width: 20px;
+   pointer-events: none;
+}
+
+button::after {
+   content: "";
+   position: absolute;
+   bottom: 0;
+   right: -20px;
+   height: 20px;
+   width: 20px;
+   pointer-events: none;
+}
+
+button:hover {
+   background-color: #89ddf8;
+}
+
+#home::before,
+#home::after {
+   background-color: transparent;
+}
+
+#menu::before,
+#menu::after {
+   background-color: transparent;
+}
+
+#about::before,
+#about::after {
+   background-color: transparent;
+}
+
+.tab-curve {
+   position: absolute;
+   box-sizing: border-box;
+   border-style: solid;
+   border-width: 20px;
+   border-radius: 50%;
+   pointer-events: none;
+}
+
+.home-left-circle {
+   border-color: transparent;
+   transform: rotate(45deg);
+}
+
+.home-right-circle {
+   border-color: transparent;
+   transform: rotate(135deg);
+
+}
+
+.menu-left-circle {
+   border-color: transparent;
+   transform: rotate(45deg);
+}
+
+.menu-right-circle {
+   border-color: transparent;
+   transform: rotate(45deg);
+}
+
+.about-left-circle {
+   border-color: transparent;
+   transform: rotate(45deg);
+}
+
+.about-right-circle {
+   border-color: transparent;
+   transform: rotate(45deg);
+}
+
+#home.selected-home::before,
+#home.selected-home::after,
+#menu.selected-menu::before,
+#menu.selected-menu::after,
+#about.selected-about::before,
+#about.selected-about::after {
+   background-color: var(--content-background-color);
+}
+
+#home.selected-home::after,
+#menu.selected-menu::after,
+#about.selected-about::after {
+   z-index: 1;
+}
+
+#content {
+   height: fit-content;
+   width: var(--content-container-width);
+   min-width: var(--minimum-width);
+   margin-left: max(calc(calc(100vw - var(--content-container-width)) / 2), 0px);
+   background-color: var(--content-background-color);
+   border-radius: 20px;
+   margin-bottom: 5vh;
+}
