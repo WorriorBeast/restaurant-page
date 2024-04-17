@@ -20,15 +20,26 @@ const tabBtn = document.getElementsByTagName('button');
 
       if (id == 'home' && !selectedHome && (selectedMenu || selectedAbout || defaultTab == 1)) {
          activeHomeTab(circleHome, btnHome, defaultTab);
+         removePreviousTab();
          appendHomeInfo();
 
       } else if (id == 'menu' && !selectedMenu && (selectedHome || selectedAbout)) {
          activeMenuTab(circleMenu, btnMenu);
+         removePreviousTab();
 
       } else if (id == 'about' && !selectedAbout && (selectedHome || selectedMenu)) {
          activeAboutTab(circleAbout, btnAbout);
+         removePreviousTab();
       }
    }));
 })();
 
 (function defaultTab() {tabBtn[0].click()})();
+
+function removePreviousTab() {
+   const content = document.getElementById('content');
+
+   while (content.lastChild !== null) {
+      content.removeChild(content.lastChild);
+   }
+}
