@@ -1,4 +1,5 @@
 import {activeHomeTab, activeMenuTab, activeAboutTab, activeTabStyle} from './change-tab-styles.js';
+import appendHomeInfo from './home-tab-info.js';
 
 const tabBtn = document.getElementsByTagName('button');
 
@@ -19,6 +20,7 @@ const tabBtn = document.getElementsByTagName('button');
 
       if (id == 'home' && !selectedHome && (selectedMenu || selectedAbout || defaultTab == 1)) {
          activeHomeTab(circleHome, btnHome, defaultTab);
+         appendHomeInfo();
 
       } else if (id == 'menu' && !selectedMenu && (selectedHome || selectedAbout)) {
          activeMenuTab(circleMenu, btnMenu);
