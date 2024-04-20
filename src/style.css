@@ -189,3 +189,46 @@ ul {
 li {
    list-style: none;
 }
+
+img {
+   height: auto;
+   width: 300px;
+   max-height: 350px;
+   border-radius: 20px;
+}
+
+.food-container {
+   display: grid;
+   justify-items: center;
+   position: relative;
+}
+
+.food-container::after {
+   content: '';
+   border: 1px solid black;
+   width: calc(var(--content-container-width) * 0.7);
+   position: relative;
+   bottom: 20px;
+   min-width: 400px;
+}
+
+.food-container:last-child::after {
+   border: none;
+}
+
+.food-name {
+   font-family: 'Comic Sans MS', cursive;
+   font-size: 1.6rem;
+}
+
+.food-description {
+   max-width: 450px;
+}
+
+.food-price {
+   margin-bottom: 45px;
+   width: calc(var(--content-container-width) - 25px);
+   max-width: 450px;
+   text-align: end;
+   font-family: Luminari, fantasy;
+}
