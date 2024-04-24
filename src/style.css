@@ -232,3 +232,60 @@ img {
    text-align: end;
    font-family: Luminari, fantasy;
 }
+
+.about-header {
+   background: url(./white-dough-tamara-gak-unsplash.jpeg);
+   color: var(--content-background-color);
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 300px;
+   margin: 0px;
+   border-radius: 20px 20px 0 0;
+   padding-left: 15px;
+}
+
+.letter {
+   background-color: white;
+   padding-bottom: 15px;
+}
+
+.letter-header {
+   display: grid;
+   grid-template-columns: 150px 1fr;
+   grid-template-areas: "pic name"
+                        "pic title";
+   align-items: end;
+}
+
+.ceo-pic {
+   background: url(./ceo-profile-pic.jpeg);
+   width: 150px;
+   height: 150px;
+   background-size: cover;
+   background-position-x: -50px;
+   background-position-y: 20px;
+   background-repeat: no-repeat;
+   clip-path: circle(35% at 50% 50%);
+   grid-area: pic;
+}
+
+.ceo-name {
+   grid-area: name;
+   font-size: 1.1rem;
+}
+
+.ceo-title {
+   grid-area: title;
+   align-self: baseline;
+   font-size: 0.8rem;
+}
+
+.letter > p {
+   padding: 0 10px 0 20px;
+   font-size: 0.9rem;
+}
+.list-image-layout {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
