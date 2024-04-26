@@ -832,22 +832,25 @@ const tabInfo = {
 		  in a prominent area of Dixon. After winning the Paris competition, he became widely recognized as an elite
 		  baker. With this, he was able to recruit top talent to work at Sweetly.`],
 	ceoProfilePic: '/Users/Emmanuel/repos/restaurant-page/src/ceo-profile-pic.jpeg',
-	p1: `Our goal is to be an innovative hub where talented chefs who want to continue inventing new delicious 
-		  desserts while serving some of the best desserts in the world to sweet-craving customers`,
-	p2: `We are more than just a business. This is our second home where we get to enjoy our hobby while satisfying
-		  your sweet palate. Nothing makes us happier than seeing customers savor and melt from the first bite.
-		  Seeing all the satisfied expressions motivates us to experiment creating new delicious treats`,
-	p3: `Our chefs take great pride in being the best of the best in world. In fact, all of our chefs are currently
-		  competing in major dessert competitions or have competed in the past. We can truly claim to have top
-		  notch talent`,
+	letter: {
+		p1: `Our goal is to be an innovative hub where talented chefs who want to continue inventing new delicious 
+			  desserts while serving some of the best desserts in the world to sweet-craving customers`,
+		p2: `We are more than just a business. This is our second home where we get to enjoy our hobby while 
+			  satisfying your sweet palate. Nothing makes us happier than seeing customers savor and melt from
+			  the first bite. Seeing all the satisfied expressions motivates us to experiment creating new delicious
+			  treats`,
+		p3: `Our chefs take great pride in being the best of the best in world. In fact, all of our chefs are 
+			  currently competing in major dessert competitions or have competed in the past. We can truly claim
+			  to have top notch talent`
+		},
 	achievements: ['2013 World Dessert Champion', '2015 World Dessert Champion',
 						'2016 National Banana Pudding Cook Off', '2016 World Dessert Championship',
 						'2017 Cacao Barry World Chocolate Masters', '2017 Taste of World', '2017 Sugar Rush',
 						'2017 US Pastry Competition'],
 	trophyImage: '/Users/Emmanuel/repos/restaurant-page/src/trophy-collection-jelly-dollar-unsplash.jpeg'
 };
-					
-let appendAbout = () => {
+
+let header = () => {
 	const content = document.getElementById('content');
 	const headerPhrase = document.createElement('h1');
 
@@ -861,7 +864,9 @@ let appendAbout = () => {
 
 		headerPhrase.appendChild(phrase);
 	}
+};
 
+let companyStory = () => {
 	const storyContainer = document.createElement('div');
 	const storyHeader = document.createElement('h2');
 	const story = document.createElement('div');
@@ -881,18 +886,19 @@ let appendAbout = () => {
 
 		story.appendChild(paragraph);
 	}
+};
 
+let letter = () => {
 	const ceoLetter = document.createElement('div');
 	const letterHeader = document.createElement('div');
 	const ceoImage = document.createElement('div');
 
 	ceoLetter.classList.add('letter');
 	letterHeader.classList.add('letter-header');
+	ceoImage.classList.add('ceo-pic');
 
 	content.appendChild(ceoLetter);
 	ceoLetter.appendChild(letterHeader);
-
-	ceoImage.classList.add('ceo-pic');
 	letterHeader.appendChild(ceoImage);
 
 	const ceoName = document.createElement('div');
@@ -907,18 +913,16 @@ let appendAbout = () => {
 	letterHeader.appendChild(ceoName);
 	letterHeader.appendChild(ceoTitle);
 
-	const p1 = document.createElement('p');
-	const p2 = document.createElement('p');
-	const p3 = document.createElement('p');
+	for (const paragraph in tabInfo.letter) {
+		const p = document.createElement('p');
 
-	p1.textContent = tabInfo.p1;
-	p2.textContent = tabInfo.p2;
-	p3.textContent = tabInfo.p3;
+		p.textContent = paragraph;
 
-	ceoLetter.appendChild(p1);
-	ceoLetter.appendChild(p2);
-	ceoLetter.appendChild(p3);
+		ceoLetter.appendChild(paragraph);
+	}
+};
 
+let achievements = () => {
 	const achievementContainer = document.createElement('div');
 	const achievementHeader = document.createElement('h2');
 	const listImageContainer = document.createElement('div');
@@ -947,7 +951,13 @@ let appendAbout = () => {
 	trophyImage.setAttribute('src', tabInfo.trophyImage);
 
 	listImageContainer.appendChild(trophyImage);
-
+};
+					
+let appendAbout = () => {
+	header();
+	companyStory();
+	letter();
+	achievements();
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (appendAbout);
@@ -1545,53 +1555,53 @@ const menuItems = {
    description: `Our world famous lave cake has an outer soft chocolate bread lightly covered with fine powder,
                  filled with warm melted 60% cacoa dark chocolate, topped with a few red raspberries and a
                  mint leaf`,
-   imagePath: '/Users/Emmanuel/repos/restaurant-page/src/lava-cake.jpeg',
+   imagePath: '../src/lava-cake.jpeg',
    price: '15'
    },
    flan: {
       name: 'Flan',
       description: `One of our top sellers for a very good reason. Cold served soft and delicious custard topped 
                     with caramelized brown sugar to add sweetness`,
-      imagePath: '/Users/Emmanuel/repos/restaurant-page/src/flan-pexels-teresa-jang.jpeg',
+      imagePath: '../src/flan-pexels-teresa-jang.jpeg',
       price: '18'
    },
    cremeBrulee: {
       name: 'Crème Brûlée',
       description: `Very creamy cold served custard with a blow torched brown sugar top layer with berries on top`,
-      imagePath: '/Users/Emmanuel/repos/restaurant-page/src/crème-brûlée-orkun-orcan-unsplash.jpeg',
+      imagePath: '../src/crème-brûlée-orkun-orcan-unsplash.jpeg',
       price: '13'
    },
    blackForestGateau: {
       name: 'Black Forest Gâteau',
       description: `German three layered chocolate sponge cake filled with lots of cream and washington cherries`,
-      imagePath: '/Users/Emmanuel/repos/restaurant-page/src/black-forest-gâteau-jacob-thomas-unsplash.jpeg',
+      imagePath: '../src/black-forest-gâteau-jacob-thomas-unsplash.jpeg',
       price: '14'
    },
    crepes: {
       name: 'Crêpes',
       description: `Crepes are filled with banana and hazelnut nutella. Comes with mildly sweet cherry sauce
                     and vanilla bean ice cream on top`,
-      imagePath: '/Users/Emmanuel/repos/restaurant-page/src/crêpes-with-ice-cream.jpeg',
+      imagePath: '../src/crêpes-with-ice-cream.jpeg',
       price: '10'
    },
    tiramisu: {
       name: 'Tiramisu',
       description: `Classic Italian dessert made of layers of ladyfingers dipped in coffee with cream in 
                     between the layers and outside. Outer top layer covered in cocoa powder`,
-      imagePath: '/Users/Emmanuel/repos/restaurant-page/src/tiramisu.jpeg',
+      imagePath: '../src/tiramisu.jpeg',
       price: '12'
    },
    mochi: {
       name: 'Handmade Japanese Mochi',
       description: `Chewy and light treat made from pounded rice grains. Center is filled with red bean paste.
                     Mochi comes in strawberry, green tea, and mango flavors`,
-      imagePath: '/Users/Emmanuel/repos/restaurant-page/src/japanese-mochi.jpeg',
+      imagePath: '../src/japanese-mochi.jpeg',
       price: '8'
    },
    piñaColada: {
       name: 'Piña Colada',
       description: `Drink consists of pineapple, coconut cream, and ice. Our Piña Colada is non-alcoholic`,
-      imagePath: '/Users/Emmanuel/repos/restaurant-page/src/piña-colada.jpeg',
+      imagePath: '../src/piña-colada.jpeg',
       price: '5'
    }
 };
