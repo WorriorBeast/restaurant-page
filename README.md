@@ -1,5 +1,31 @@
 # restaurant-page
 
+A restaurant webpage that can be navigated by clicking any tab to view the desired content. The default tab when the
+page loads is the home tab.
+
+Objective:
+    - Build a tabular page
+    - Primarily use Javascript to build the page
+    - Use ES6 modules
+    - Use Webpack to bundle the javascript module
+    - Create a custom webpack configuration for development
+
+What I learned:
+
+The development environment was quite confusing as first. In the past I wrote all Javascript in a single file, but
+this time I wrote multiple files as a module to make maintaining and building simpler. There was a lot of uncertainty
+when starting this project that I went back and reread information about webpack again. Now I'm pretty confident about
+setting up a basic custom webpack configuration file. When I first began to set up the project, I noticed there was a
+node_modules directory and was unsure if that directory must be pushed into github until I read about .gitignore.
+
+I read extensively about what is DOMContentLoaded and load and what is the difference. DOMContentLoaded fires once
+the html has parsed and load fires immediately after the html has parsed and other resources such as images have
+loaded. In my specific use case, DOMContentLoaded was the better option. I also read information about the resize
+event since it was my first time using it. Luckily resize is straight forward and simple on how it fires. When reading
+about how to get the width the window, I found there were multiple methods and properties that can be used, but which
+one is used highly depends how it's going to be used and how it calculates the window width. This took quite a bit of
+reading and testing to decide which works best for my use case.
+
 Below is a list of images I used all tabs with their respective url link, photographer/creator, title, and relative
 file path.
 
