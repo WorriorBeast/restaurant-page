@@ -916,9 +916,9 @@ let letter = () => {
 	for (const paragraph in tabInfo.letter) {
 		const p = document.createElement('p');
 
-		p.textContent = paragraph;
+		p.textContent = tabInfo.letter[paragraph];
 
-		ceoLetter.appendChild(paragraph);
+		ceoLetter.appendChild(p);
 	}
 };
 
@@ -1547,6 +1547,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ "./src/style.css");
+/* harmony import */ var _lava_cake_jpeg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./lava-cake.jpeg */ "./src/lava-cake.jpeg");
+/* harmony import */ var _flan_pexels_teresa_jang_jpeg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./flan-pexels-teresa-jang.jpeg */ "./src/flan-pexels-teresa-jang.jpeg");
+/* harmony import */ var _cr_me_br_l_e_orkun_orcan_unsplash_jpeg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./crème-brûlée-orkun-orcan-unsplash.jpeg */ "./src/crème-brûlée-orkun-orcan-unsplash.jpeg");
+/* harmony import */ var _black_forest_g_teau_jacob_thomas_unsplash_jpeg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./black-forest-gâteau-jacob-thomas-unsplash.jpeg */ "./src/black-forest-gâteau-jacob-thomas-unsplash.jpeg");
+/* harmony import */ var _cr_pes_with_ice_cream_jpeg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./crêpes-with-ice-cream.jpeg */ "./src/crêpes-with-ice-cream.jpeg");
+/* harmony import */ var _tiramisu_jpeg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./tiramisu.jpeg */ "./src/tiramisu.jpeg");
+/* harmony import */ var _japanese_mochi_jpeg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./japanese-mochi.jpeg */ "./src/japanese-mochi.jpeg");
+/* harmony import */ var _pi_a_colada_jpeg__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./piña-colada.jpeg */ "./src/piña-colada.jpeg");
+
+
+
+
+
+
+
+
 
 
 const menuItems = {
@@ -1555,53 +1571,53 @@ const menuItems = {
    description: `Our world famous lave cake has an outer soft chocolate bread lightly covered with fine powder,
                  filled with warm melted 60% cacoa dark chocolate, topped with a few red raspberries and a
                  mint leaf`,
-   imagePath: '../src/lava-cake.jpeg',
+   imagePath: _lava_cake_jpeg__WEBPACK_IMPORTED_MODULE_1__,
    price: '15'
    },
    flan: {
       name: 'Flan',
       description: `One of our top sellers for a very good reason. Cold served soft and delicious custard topped 
                     with caramelized brown sugar to add sweetness`,
-      imagePath: '../src/flan-pexels-teresa-jang.jpeg',
+      imagePath: _flan_pexels_teresa_jang_jpeg__WEBPACK_IMPORTED_MODULE_2__,
       price: '18'
    },
    cremeBrulee: {
       name: 'Crème Brûlée',
       description: `Very creamy cold served custard with a blow torched brown sugar top layer with berries on top`,
-      imagePath: '../src/crème-brûlée-orkun-orcan-unsplash.jpeg',
+      imagePath: _cr_me_br_l_e_orkun_orcan_unsplash_jpeg__WEBPACK_IMPORTED_MODULE_3__,
       price: '13'
    },
    blackForestGateau: {
       name: 'Black Forest Gâteau',
       description: `German three layered chocolate sponge cake filled with lots of cream and washington cherries`,
-      imagePath: '../src/black-forest-gâteau-jacob-thomas-unsplash.jpeg',
+      imagePath: _black_forest_g_teau_jacob_thomas_unsplash_jpeg__WEBPACK_IMPORTED_MODULE_4__,
       price: '14'
    },
    crepes: {
       name: 'Crêpes',
       description: `Crepes are filled with banana and hazelnut nutella. Comes with mildly sweet cherry sauce
                     and vanilla bean ice cream on top`,
-      imagePath: '../src/crêpes-with-ice-cream.jpeg',
+      imagePath: _cr_pes_with_ice_cream_jpeg__WEBPACK_IMPORTED_MODULE_5__,
       price: '10'
    },
    tiramisu: {
       name: 'Tiramisu',
       description: `Classic Italian dessert made of layers of ladyfingers dipped in coffee with cream in 
                     between the layers and outside. Outer top layer covered in cocoa powder`,
-      imagePath: '../src/tiramisu.jpeg',
+      imagePath: _tiramisu_jpeg__WEBPACK_IMPORTED_MODULE_6__,
       price: '12'
    },
    mochi: {
       name: 'Handmade Japanese Mochi',
       description: `Chewy and light treat made from pounded rice grains. Center is filled with red bean paste.
                     Mochi comes in strawberry, green tea, and mango flavors`,
-      imagePath: '../src/japanese-mochi.jpeg',
+      imagePath: _japanese_mochi_jpeg__WEBPACK_IMPORTED_MODULE_7__,
       price: '8'
    },
    piñaColada: {
       name: 'Piña Colada',
       description: `Drink consists of pineapple, coconut cream, and ice. Our Piña Colada is non-alcoholic`,
-      imagePath: '../src/piña-colada.jpeg',
+      imagePath: _pi_a_colada_jpeg__WEBPACK_IMPORTED_MODULE_8__,
       price: '5'
    }
 };
@@ -1642,6 +1658,16 @@ function appendMenu() {
 
 /***/ }),
 
+/***/ "./src/black-forest-gâteau-jacob-thomas-unsplash.jpeg":
+/*!************************************************************!*\
+  !*** ./src/black-forest-gâteau-jacob-thomas-unsplash.jpeg ***!
+  \************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "2a227d0de282f69f26e4.jpeg";
+
+/***/ }),
+
 /***/ "./src/ceo-profile-pic.jpeg":
 /*!**********************************!*\
   !*** ./src/ceo-profile-pic.jpeg ***!
@@ -1649,6 +1675,26 @@ function appendMenu() {
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 module.exports = __webpack_require__.p + "a90ee88ad0b7ef66ddfd.jpeg";
+
+/***/ }),
+
+/***/ "./src/crème-brûlée-orkun-orcan-unsplash.jpeg":
+/*!****************************************************!*\
+  !*** ./src/crème-brûlée-orkun-orcan-unsplash.jpeg ***!
+  \****************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "b2a549f6c7246e2d8ae4.jpeg";
+
+/***/ }),
+
+/***/ "./src/crêpes-with-ice-cream.jpeg":
+/*!****************************************!*\
+  !*** ./src/crêpes-with-ice-cream.jpeg ***!
+  \****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "e8984898dc8df3e35090.jpeg";
 
 /***/ }),
 
@@ -1662,6 +1708,26 @@ module.exports = __webpack_require__.p + "51409b2b8bc26ade14dd.jpeg";
 
 /***/ }),
 
+/***/ "./src/flan-pexels-teresa-jang.jpeg":
+/*!******************************************!*\
+  !*** ./src/flan-pexels-teresa-jang.jpeg ***!
+  \******************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "37042bf81f20065728f1.jpeg";
+
+/***/ }),
+
+/***/ "./src/japanese-mochi.jpeg":
+/*!*********************************!*\
+  !*** ./src/japanese-mochi.jpeg ***!
+  \*********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "c6f6e2bf4057c2b5fc29.jpeg";
+
+/***/ }),
+
 /***/ "./src/lava-cake.jpeg":
 /*!****************************!*\
   !*** ./src/lava-cake.jpeg ***!
@@ -1669,6 +1735,26 @@ module.exports = __webpack_require__.p + "51409b2b8bc26ade14dd.jpeg";
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 module.exports = __webpack_require__.p + "d72eed44b2e94e7a6206.jpeg";
+
+/***/ }),
+
+/***/ "./src/piña-colada.jpeg":
+/*!******************************!*\
+  !*** ./src/piña-colada.jpeg ***!
+  \******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "0b648180933898508ac1.jpeg";
+
+/***/ }),
+
+/***/ "./src/tiramisu.jpeg":
+/*!***************************!*\
+  !*** ./src/tiramisu.jpeg ***!
+  \***************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "76cbbc01a43a2ba3fcc0.jpeg";
 
 /***/ }),
 

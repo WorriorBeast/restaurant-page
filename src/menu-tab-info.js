@@ -1,4 +1,12 @@
 import './style.css';
+import lavaCakeImg from './lava-cake.jpeg';
+import flanImg from './flan-pexels-teresa-jang.jpeg';
+import cremeBruleeImg from './crème-brûlée-orkun-orcan-unsplash.jpeg';
+import blackForestGateauImg from './black-forest-gâteau-jacob-thomas-unsplash.jpeg';
+import crepesImg from './crêpes-with-ice-cream.jpeg';
+import tiramisuImg from './tiramisu.jpeg';
+import mochiImg from './japanese-mochi.jpeg';
+import piñaColadaImg from './piña-colada.jpeg';
 
 const menuItems = {
    lavaCake: {
@@ -6,53 +14,53 @@ const menuItems = {
    description: `Our world famous lave cake has an outer soft chocolate bread lightly covered with fine powder,
                  filled with warm melted 60% cacoa dark chocolate, topped with a few red raspberries and a
                  mint leaf`,
-   imagePath: '../src/lava-cake.jpeg',
+   imagePath: lavaCakeImg,
    price: '15'
    },
    flan: {
       name: 'Flan',
       description: `One of our top sellers for a very good reason. Cold served soft and delicious custard topped 
                     with caramelized brown sugar to add sweetness`,
-      imagePath: '../src/flan-pexels-teresa-jang.jpeg',
+      imagePath: flanImg,
       price: '18'
    },
    cremeBrulee: {
       name: 'Crème Brûlée',
       description: `Very creamy cold served custard with a blow torched brown sugar top layer with berries on top`,
-      imagePath: '../src/crème-brûlée-orkun-orcan-unsplash.jpeg',
+      imagePath: cremeBruleeImg,
       price: '13'
    },
    blackForestGateau: {
       name: 'Black Forest Gâteau',
       description: `German three layered chocolate sponge cake filled with lots of cream and washington cherries`,
-      imagePath: '../src/black-forest-gâteau-jacob-thomas-unsplash.jpeg',
+      imagePath: blackForestGateauImg,
       price: '14'
    },
    crepes: {
       name: 'Crêpes',
       description: `Crepes are filled with banana and hazelnut nutella. Comes with mildly sweet cherry sauce
                     and vanilla bean ice cream on top`,
-      imagePath: '../src/crêpes-with-ice-cream.jpeg',
+      imagePath: crepesImg,
       price: '10'
    },
    tiramisu: {
       name: 'Tiramisu',
       description: `Classic Italian dessert made of layers of ladyfingers dipped in coffee with cream in 
                     between the layers and outside. Outer top layer covered in cocoa powder`,
-      imagePath: '../src/tiramisu.jpeg',
+      imagePath: tiramisuImg,
       price: '12'
    },
    mochi: {
       name: 'Handmade Japanese Mochi',
       description: `Chewy and light treat made from pounded rice grains. Center is filled with red bean paste.
                     Mochi comes in strawberry, green tea, and mango flavors`,
-      imagePath: '../src/japanese-mochi.jpeg',
+      imagePath: mochiImg,
       price: '8'
    },
    piñaColada: {
       name: 'Piña Colada',
       description: `Drink consists of pineapple, coconut cream, and ice. Our Piña Colada is non-alcoholic`,
-      imagePath: '../src/piña-colada.jpeg',
+      imagePath: piñaColadaImg,
       price: '5'
    }
 };
