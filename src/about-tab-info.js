@@ -1,4 +1,5 @@
 import './style.css';
+import trophyCollectionImg from './trophy-collection-jelly-dollar-unsplash.jpeg';
 
 const tabInfo = {
 	headerPhrases: [`Special Customers.`, `Special Chefs.`, `Special Food.`],
@@ -30,7 +31,7 @@ const tabInfo = {
 						'2016 National Banana Pudding Cook Off', '2016 World Dessert Championship',
 						'2017 Cacao Barry World Chocolate Masters', '2017 Taste of World', '2017 Sugar Rush',
 						'2017 US Pastry Competition'],
-	trophyImage: '/Users/Emmanuel/repos/restaurant-page/src/trophy-collection-jelly-dollar-unsplash.jpeg'
+	trophyImage: trophyCollectionImg
 };
 
 let header = () => {
@@ -132,6 +133,7 @@ let achievements = () => {
 	const trophyImage = document.createElement('img');
 
 	trophyImage.setAttribute('src', tabInfo.trophyImage);
+	trophyImage.setAttribute('alt', 'A collection of trophies');
 
 	listImageContainer.appendChild(trophyImage);
 };

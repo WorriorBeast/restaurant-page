@@ -815,6 +815,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ "./src/style.css");
+/* harmony import */ var _trophy_collection_jelly_dollar_unsplash_jpeg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./trophy-collection-jelly-dollar-unsplash.jpeg */ "./src/trophy-collection-jelly-dollar-unsplash.jpeg");
+
 
 
 const tabInfo = {
@@ -847,7 +849,7 @@ const tabInfo = {
 						'2016 National Banana Pudding Cook Off', '2016 World Dessert Championship',
 						'2017 Cacao Barry World Chocolate Masters', '2017 Taste of World', '2017 Sugar Rush',
 						'2017 US Pastry Competition'],
-	trophyImage: '/Users/Emmanuel/repos/restaurant-page/src/trophy-collection-jelly-dollar-unsplash.jpeg'
+	trophyImage: _trophy_collection_jelly_dollar_unsplash_jpeg__WEBPACK_IMPORTED_MODULE_1__
 };
 
 let header = () => {
@@ -949,6 +951,7 @@ let achievements = () => {
 	const trophyImage = document.createElement('img');
 
 	trophyImage.setAttribute('src', tabInfo.trophyImage);
+	trophyImage.setAttribute('alt', 'A collection of trophies');
 
 	listImageContainer.appendChild(trophyImage);
 };
@@ -1755,6 +1758,16 @@ module.exports = __webpack_require__.p + "0b648180933898508ac1.jpeg";
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 module.exports = __webpack_require__.p + "76cbbc01a43a2ba3fcc0.jpeg";
+
+/***/ }),
+
+/***/ "./src/trophy-collection-jelly-dollar-unsplash.jpeg":
+/*!**********************************************************!*\
+  !*** ./src/trophy-collection-jelly-dollar-unsplash.jpeg ***!
+  \**********************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "04e5bc9d3a6dbe2bb8d9.jpeg";
 
 /***/ }),
 
