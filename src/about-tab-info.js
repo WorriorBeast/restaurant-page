@@ -99,9 +99,9 @@ let letter = () => {
 	for (const paragraph in tabInfo.letter) {
 		const p = document.createElement('p');
 
-		p.textContent = paragraph;
+		p.textContent = tabInfo.letter[paragraph];
 
-		ceoLetter.appendChild(paragraph);
+		ceoLetter.appendChild(p);
 	}
 };
 
