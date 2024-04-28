@@ -3,6 +3,8 @@
 A restaurant webpage that can be navigated by clicking any tab to view the desired content. The default tab when the
 page loads is the home tab.
 
+Live Demo: https://worriorbeast.github.io/restaurant-page/ 
+
 Objective:
     - Build a tabular page
     - Primarily use Javascript to build the page
@@ -25,6 +27,15 @@ event since it was my first time using it. Luckily resize is straight forward an
 about how to get the width the window, I found there were multiple methods and properties that can be used, but which
 one is used highly depends how it's going to be used and how it calculates the window width. This took quite a bit of
 reading and testing to decide which works best for my use case.
+
+After creating a live demo on github pages and viewing it, I noticed the images in the menu tab gave a error 404.
+I fixed it by importing the images into the javascript file rather than using an absolute path or relative path. I
+don't understand why when using an absolute path and relative path the images are displayed when viewing the html
+locally, but not when viewing on a server. What I did notice though was that after I imported the images and ran
+Webpack, the images were added in the output dist directory. From this, I can only deduce that the problem came from
+how Webpack bundles the files since the images weren't part of the output dist directory. As a result the gh-pages
+branch in the repository did not have access to the images, so the images weren't displaying. The local html worked because the images were found locally. It's possible that github pages was partially responsible for the images giving 
+a error 404.
 
 Below is a list of images I used all tabs with their respective url link, photographer/creator, title, and relative
 file path.
